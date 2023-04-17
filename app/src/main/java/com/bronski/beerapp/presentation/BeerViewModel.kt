@@ -13,7 +13,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class BeerViewModel @Inject constructor(
-    private var pager: Pager<Int, BeerEntity>
+    pager: Pager<Int, BeerEntity>
 ) : ViewModel() {
 
     val beerPagingFlow = pager
